@@ -128,7 +128,7 @@
 
     <!-- Method. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <!-- <div class="column is-four-fifths"> -->
         <h2 class="title is-3">Method</h2>
         <p style="font-size: 100%; text-align: left;">In simulation, we collect data with an RL agent to offline train both the Gain Tuner and the Force Planner:</p>
         <img src="static/images/method-sim.png" class="method-image" alt=""
@@ -137,100 +137,38 @@
         <p style="font-size: 100%; text-align: left;">During real-world deployment, the Force Planner plans both the robot motion and desired contact forces. The Gain Tuner dynamically adjusts the compliance control gains to track the desired contact forces:</p>
         <img src="static/images/method-real.jpg" class="method-image" alt=""
           style="display: block; margin-left: auto; margin-right: auto; width: 93%; height: auto;" />
-      </div>
+      <!-- </div> -->
     </div>
     <!--/ Method. -->
-    <br>
-    <!-- Paper video. -->
+
+    <!-- Experiments. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <br>
-        <div class="publication-video">
-          <iframe src="https://youtube.com/embed/vFEA-KObrw8"
-                  frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
+      <h2 class="title is-3">Experiments</h2>
+      <p style="font-size: 100%; text-align: left;">In simulation, we collect data with an RL agent to offline train both the Gain Tuner and the Force Planner:</p>
+      <img src="static/images/method-sim.png" class="method-image" alt=""
+        style="display: block; margin-left: auto; margin-right: auto; width: 98%; height: auto;" />
+      <br>
+      <p style="font-size: 100%; text-align: left;">During real-world deployment, the Force Planner plans both the robot motion and desired contact forces. The Gain Tuner dynamically adjusts the compliance control gains to track the desired contact forces:</p>
+      <img src="static/images/method-real.jpg" class="method-image" alt=""
+        style="display: block; margin-left: auto; margin-right: auto; width: 93%; height: auto;" />
     </div>
-    <!--/ Paper video. -->
-  </div>
+  <!--/ Experiments. -->
 </section>
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
+<section>
+  <!-- Paper video. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <br>
+      <div class="publication-video">
+        <iframe src="https://youtube.com/embed/vFEA-KObrw8"
+                frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
   </div>
+  <!--/ Paper video. -->
 </section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
