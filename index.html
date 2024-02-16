@@ -130,11 +130,14 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
-        <div class="content has-text-justified">
-          <p>
-            Contact-rich manipulation tasks often exhibit a large sim-to-real gap. For instance, industrial assembly tasks frequently involve tight insertions where the clearance is less than 0.1 mm and can even be negative when dealing with a deformable receptacle. This narrow clearance leads to complex contact dynamics that are difficult to model accurately in simulation, making it challenging to transfer simulation-learned policies to physical robots.
-          </p>
-        </div>
+        <br>
+        <span style="font-size: 100%"> In simulation, we collect data with an RL agent to offline train both the Gain Tuner and the Force Planner.</span>
+        <img src="static/images/method-sim.png" class="method-image" alt=""
+          style="display: block; margin-left: auto; margin-right: auto" />
+        <br>
+        <span style="font-size: 100%">The Force Planner plans both the robot motion and desired contact forces. The Gain Tuner dynamically adjusts the compliance control gains to track the desired contact forces.</span>
+        <img src="static/images/method-real.jpg" class="method-image" alt=""
+          style="display: block; margin-left: auto; margin-right: auto" />
       </div>
     </div>
     <!--/ Method. -->
